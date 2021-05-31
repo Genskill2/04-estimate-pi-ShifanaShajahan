@@ -22,7 +22,7 @@ int main(void) {
       abort();
     }
   }
-}
+
 int i,num;
 float pi;
 
@@ -32,4 +32,5 @@ float wallis_pi(int num) {
      num=4.0*i*i;
      pi*=num/(num-1);
  }
+}
 }
