@@ -27,10 +27,11 @@ int i,num;
 float pi;
 
 float wallis_pi(int num) {
-    for(int(=1;i<num;i++)
+    for(int i=1;i<num;i++)
    {
      num=4.0*i*i;
      pi*=num/(num-1);
  }
+  }
 }
 }
