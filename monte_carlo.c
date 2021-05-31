@@ -38,7 +38,7 @@ int main(void) {
 
 int i, count, n;
  double x,y,z,pi;
-float mc_pi(int){
+float mc_pi(int x){
 
 for(i = 0; i < n; ++i) {
 
