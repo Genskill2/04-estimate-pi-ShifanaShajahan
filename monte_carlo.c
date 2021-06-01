@@ -34,22 +34,14 @@ int main(void) {
       abort();
     }
   }
+
+float mc_pi(int)
+count=0;
+   for ( i=0; i<niter; i++) {
+      x = (double)rand()/RAND_MAX;
+      y = (double)rand()/RAND_MAX;
+      z = x*x+y*y;
+      if (z<=1) count++;
+      }
+   pi=(double)count/niter*4;
 }
-
-int i, count, n;
- double x,y,z,pi;
-float mc_pi(int x){
-
-for(i = 0; i < n; ++i) {
-
-     x = (double)rand() / RAND_MAX;
-
-     y = (double)rand() / RAND_MAX;
-
-     z = x * x + y * y;
-
-     if( z <= 1 ) count++;
- }
-
- pi = (double) count / n * 4;
-  }
