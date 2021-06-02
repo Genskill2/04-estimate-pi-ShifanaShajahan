@@ -35,7 +35,7 @@ int main(void) {
     }
   }
 
-float mc_pi(int n){
+float mc_pi(int){
     float x;
     float y;
 int count=0;
