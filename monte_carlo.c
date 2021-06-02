@@ -1,4 +1,4 @@
-#include <assert.h>
+B#include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -38,14 +38,16 @@ int main(void) {
 float mc_pi(int n){
     float x;
     float y;
-int count=0;
+int circle=0;
+  int square=0;
 for(int i=0;i<1000000000;i++)
 x=rand()/(float)RAND_MAX;
 x=x*2-1;
 y=rand()/(float)RAND_MAX;
 if((x*x+y*y)<1)
-{
-count ++;
+{circle ++;
 }
+  else{square ++;}
+  pi=4*(circle)/square;
 }
 }
