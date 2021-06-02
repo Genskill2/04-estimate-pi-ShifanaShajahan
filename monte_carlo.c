@@ -42,9 +42,10 @@ float mc_pi(int n){
 for(int i=1; i<=n; i++){
     x= frandom();
     y= frandom();
-    if (((xx)+ (yy))<=1){circle++;}
+    if (((x*x)+ (y*y))<=1){circle++;}
     else {square++;}
 } square = square + circle;
  float pi = 4*circle/square;
 return pi;
+}
 }
