@@ -45,7 +45,7 @@ x=x*2-1;
 y=rand()/(float)RAND_MAX;
 if((x*x+y*y)<1)
 {
-count ++
+count ++;
 }
 }
 }
