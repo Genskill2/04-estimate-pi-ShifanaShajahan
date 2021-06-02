@@ -36,16 +36,15 @@ int main(void) {
   }
 
 float mc_pi(int n){
-    int circle = 0;
-    int square = 0;
-    float x, y;
-for(int i=1; i<=n; i++){
-    x= frandom();
-    y= frandom();
-    if (((x*x)+ (y*y))<=1){circle++;}
-    else {square++;}
-} square = square + circle;
- float pi = 4*circle/square;
-return pi;
+    float x;
+    float y;
+int count 0;
+for(int i=0;i<10000000;i++)
+x=rand()/(float)RAND_MAX;
+x=x*2-1;
+y=rand()/(float)RAND_MAX;
+if((x*x+y*y)<1)
+{
+count ++
 }
 }
