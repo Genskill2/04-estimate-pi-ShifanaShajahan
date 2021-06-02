@@ -47,6 +47,7 @@ y=rand()/(float)RAND_MAX;
 if((x*x+y*y)<1)
 {count ++;
 }
+  pi=(float)count/10000000.0*4.0;
 }
   }
 
