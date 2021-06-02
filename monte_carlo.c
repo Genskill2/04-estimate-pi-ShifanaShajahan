@@ -35,13 +35,16 @@ int main(void) {
     }
   }
 
-float mc_pi(int)
-count=0;
-   for ( i=0; i<niter; i++) {
-      x = (double)rand()/RAND_MAX;
-      y = (double)rand()/RAND_MAX;
-      z = x*x+y*y;
-      if (z<=1) count++;
-      }
-   pi=(double)count/niter*4;
+float mc_pi(int n){
+    int circle = 0;
+    int square = 0;
+    float x, y;
+for(int i=1; i<=n; i++){
+    x= frandom();
+    y= frandom();
+    if (((xx)+ (yy))<=1){circle++;}
+    else {square++;}
+} square = square + circle;
+ float pi = 4*circle/square;
+return pi;
 }
