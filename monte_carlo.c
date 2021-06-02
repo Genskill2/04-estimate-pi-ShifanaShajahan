@@ -38,7 +38,7 @@ int main(void) {
 float mc_pi(int n){
     float x;
     float y;
-int count 0;
+int count=0;
 for(int i=0;i<10000000;i++)
 x=rand()/(float)RAND_MAX;
 x=x*2-1;
@@ -46,5 +46,6 @@ y=rand()/(float)RAND_MAX;
 if((x*x+y*y)<1)
 {
 count ++
+}
 }
 }
