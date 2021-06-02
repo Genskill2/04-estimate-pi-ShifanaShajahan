@@ -39,6 +39,7 @@ int main(void) {
 float mc_pi(int n){
     float x;
     float y;
+  float pi;
 int count=0;
 for(int i=0;i<10000000;i++)
 x=rand()/(float)RAND_MAX;
