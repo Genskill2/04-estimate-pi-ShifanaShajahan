@@ -1,4 +1,4 @@
-//monte_carlo.c//
+
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
