@@ -22,16 +22,21 @@ int main(void) {
       abort();
     }
   }
+float wallis_pi(int);
+{
+pi = 0.0   
+    for i in range(1, n):
+        x = 4 * (i ** 2)
+        y = x - 1
+        z = float(x) / float(y)
+        if (i == 1):
+            pi = z
+        else:
+            pi *= z
+    pi *= 2
+    return pi
 
-int i,num;
-float pi;
-
-float wallis_pi(int num) {
-    for(int i=1;i<num;i++)
-   {
-     num=4.0*i*i;
-     pi*=num/(num-1);
- }
-  }
+printf(wallis(100000))
+}
 }
 
