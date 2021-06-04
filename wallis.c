@@ -23,20 +23,3 @@ int main(void) {
       abort();
     }
   }
-float wallis_pi(int);
-{
-pi = 0.0;
-
-    for i in range(n);
-        left = (2 * i)/(2 * i - 1)
-        right = (2 * i)/(2 * i + 1)
-        total = left * right
-        pi = pi + total
-
-    return pi;
-
-printf("wallis_pi(1000");
-printf("wallis_pi(10000");
-printf(" wallis_pi(100000");
-  }
-}  
