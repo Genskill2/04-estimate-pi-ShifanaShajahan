@@ -23,4 +23,16 @@ int main(void) {
       abort();
     }
   }
+float wallis_pi(int);
+{
+int main(void)
+{
+ pi = 1.0;
+    for (int i = 1; i < count; i++)
+    {
+        long double num = 4.0 * i * i;
+        pi *= num / (num - 1);
+    }
+    return pi * 2;
+}
 }
