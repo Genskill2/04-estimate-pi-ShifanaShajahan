@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 int main(void){
-double pi(double tolerance)
+double mc_pi
 {
 	double x, y, val, error;
 	unsigned long sampled = 0, hit = 0, i;
