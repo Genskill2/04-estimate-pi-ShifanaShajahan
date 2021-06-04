@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-int main(viod){
+int main(void){
 double pi(double tolerance)
 {
 	double x, y, val, error;
@@ -31,7 +31,7 @@ double pi(double tolerance)
 	return val;
 }
  
-int main()
+
 {
 	printf("Pi is %f\n", pi(3e-4)); /* set to 1e-4 for some fun */
 	return 0;
