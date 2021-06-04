@@ -26,7 +26,6 @@ int main() {
 
      if( z <= 1 ) count++;
  }
-
  pi = (double) count / n * 4;
  
  printf("Approximate PI = %g", pi);
