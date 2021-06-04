@@ -3,24 +3,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+int main(viod){
 
-float mc_pi(int);
+float mc_pi(int n){
+    int circle = 0;
+    int square = 0;
+    float x, y;
+for(int i=1; i<=n; i++){
+    x= frandom();
+    y= frandom();
+    if (((xx)+ (yy))<=1){circle++;}
+    else {square++;}
+} square = square + circle;
+ float pi = 4*circle/square;
+return pi;
+}
 
-  int n;
-  float x=frandom();
-  float y=frandom();
-  float d=(pow(x,2)+ pow(y,2));
-  for (int count=0;count<=n;count++){
-       float pi=(4*count/n);
-     if (d<=1){
-           return(count);
-    }
-      else
-      {
-           abort();
-       }    
-    
-    return(pi);
 
 float frandom() {
   long int q = random();
