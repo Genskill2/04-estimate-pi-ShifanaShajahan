@@ -27,6 +27,7 @@ float wallis_pi(int);
 {
 int main(void)
 {
+int count;
  pi = 1.0;
     for (int i = 1; i < count; i++)
     {
@@ -34,5 +35,6 @@ int main(void)
         pi *= num / (num - 1);
     }
     return pi * 2;
+}
 }
 }
