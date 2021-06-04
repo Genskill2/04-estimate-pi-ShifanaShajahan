@@ -35,22 +35,27 @@ int main(void) {
       abort();
     }
   }
+float mc_pi(int);
+  {
+  int n;
+  float x=frandom();
+  float y=frandom();
+  float d=(pow(x,2)+ pow(y,2));
+  for (int count=0;count<=n;count++){
+       float pi=(4*count/n);
+     if (d<=1){
+           return(count);
+    }
+      else
+      {
+           abort();
+       }    
+    
+    return(pi);
+    }
+   }
+  
 
-float mc_pi(int n){
-    float x;
-    float y;
-  float pi;
-int count=0;
-for(int i=0;i<10000000;i++)
-x=rand()/(float)RAND_MAX;
-x=x*2-1;
-y=rand()/(float)RAND_MAX;
-if((x*x+y*y)<1)
-{count ++;
-}
-  pi=(double)count/n4;
-}
-  }
 
 
 
