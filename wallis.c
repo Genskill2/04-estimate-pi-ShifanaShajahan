@@ -27,7 +27,7 @@ float wallis_pi(int);
 {
 int i,n;
 pi = 0.0; 
-    for i in range(1,n):
+    for (i in range(1,n):
         x = 4 * (i ** 2)
         y = x - 1
         z = float(x) / float(y)
