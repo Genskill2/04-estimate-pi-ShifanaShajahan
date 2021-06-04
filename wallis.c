@@ -25,20 +25,34 @@ int main(void) {
   }
 float wallis_pi(int);
 {
-int i,n;
-pi = 0.0; 
-    for (i; in range(1,n):
-        x = 4 * (i ** 2)
-        y = x - 1
-        z = float(x) / float(y)
-        if (i == 1):
-            pi = z
-        else:
-            pi *= z
-    pi *= 2
-    return pi
 
-printf(wallis(100000))
+    int r[2800 + 1];
+    int i, k;
+    int b, d;
+    int c = 0;
+
+    for (i = 0; i < 2800; i++) {
+        r[i] = 2000;
+    }
+
+    for (k = 2800; k > 0; k -= 14) {
+        d = 0;
+
+        i = k;
+        for (;;) {
+            d += r[i] * 10000;
+            b = 2 * i - 1;
+
+            r[i] = d % b;
+            d /= b;
+            i--;
+            if (i == 0) break;
+            d *= i;
+        }
+        printf("%.4d", c + d / 10000);
+        c = d % 10000;
+    }
+
+    return 0;
 }
 }
-
